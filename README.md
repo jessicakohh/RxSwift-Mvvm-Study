@@ -11,3 +11,14 @@
 |6|[Subject](https://jesskoh.notion.site/Subject-78738dc98f6d46aba7b1c3cd6f5ff4e7)|
 |7|[Create Opertaor](https://jesskoh.notion.site/Create-Opertator-0fb83fc1d8094239b4ac10d70be9507c)|
 |8|[Filtering Operator](https://jesskoh.notion.site/Filtering-Operator-66cf9cbd6e8e414893e3f34676c47d61)|
+
+
+---
+## 곰튀김 RxSwift 정리 시즌1 [🔗](https://www.youtube.com/watch?v=w5Qmie-GbiA&t=7896s)
+- [RxSwift (1) _ Observable, Operater](https://jesskoh.notion.site/RxSwift-1-9486c6be966e4469abf7e8f48d341d51)
+- [RxSwift (2) _ Scheduler, RxCocoa](https://jesskoh.notion.site/RxSwift-2-_-Scheduler-RxCocoa-619dcbfef65e44388442645afeb526b9)
+- [RxSwift (3) _ Subjcet](https://jesskoh.notion.site/RxSwift-3-_-Subject-ca52d04658354555a27c4f3f4b4a6bb6)
+- [RxSwift (4) _ 순환참조와 메모리관리 / Hot, Cold Observable / MVVM](https://jesskoh.notion.site/RxSwift-4-_-Hot-Cold-Observable-MVVM-0b9c0e56af6a4c76ba1db4af6d275994)
+
+## 곰튀김 RxSwift 정리 시즌2 [🔗](https://www.youtube.com/watch?v=iHKBNYMWd5I&list=PL03rJBlpwTaBrhux_C8RmtWDI_kZSLvdQ&index=1)
+
