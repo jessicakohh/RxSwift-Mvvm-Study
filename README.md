@@ -12,6 +12,18 @@
 |7|[Create Opertaor](https://jesskoh.notion.site/Create-Opertator-0fb83fc1d8094239b4ac10d70be9507c)|
 |8|[Filtering Operator](https://jesskoh.notion.site/Filtering-Operator-66cf9cbd6e8e414893e3f34676c47d61)|
 
+🗒 ~ 2023.03.01
+|No.|제목|
+|---|---|
+|9|[Transforming Operator]|
+|10|[Combining Operator]|
+|11|[Conditional Operator]|
+|12|[Time-based Operator]|
+|13|[Sharing Subscription]|
+|14|[Scheduler]|
+|15|[ErrorHandling]|
+
+
 
 ---
 ## 곰튀김 RxSwift 정리 시즌1 [🔗](https://www.youtube.com/watch?v=w5Qmie-GbiA&t=7896s)
