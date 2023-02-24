@@ -15,7 +15,7 @@
 🗒 ~ 2023.03.01
 |No.|제목|
 |---|---|
-|9|[Transforming Operator]|
+|9|[Transforming Operator](https://jesskoh.notion.site/Transforming-Operator-f5f6493aaafa407bb4f0c3a270196495)|
 |10|[Combining Operator]|
 |11|[Conditional Operator]|
 |12|[Time-based Operator]|
