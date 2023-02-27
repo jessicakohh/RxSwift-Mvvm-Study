@@ -16,8 +16,8 @@
 |No.|제목|
 |---|---|
 |9|[Transforming Operator](https://jesskoh.notion.site/Transforming-Operator-f5f6493aaafa407bb4f0c3a270196495)|
-|10|[Combining Operator]|
-|11|[Conditional Operator]|
+|10|[Combining Operator](https://jesskoh.notion.site/Combining-Operator-aa6d8b5d89d944c8b88ebdc6e213cc9c)|
+|11|[Conditional Operator](https://jesskoh.notion.site/Conditional-Operator-09200d174c894bd1935b7eebd6dceb85)|
 |12|[Time-based Operator]|
 |13|[Sharing Subscription]|
 |14|[Scheduler]|
