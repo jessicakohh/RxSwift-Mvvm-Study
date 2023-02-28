@@ -18,10 +18,10 @@
 |9|[Transforming Operator](https://jesskoh.notion.site/Transforming-Operator-f5f6493aaafa407bb4f0c3a270196495)|
 |10|[Combining Operator](https://jesskoh.notion.site/Combining-Operator-aa6d8b5d89d944c8b88ebdc6e213cc9c)|
 |11|[Conditional Operator](https://jesskoh.notion.site/Conditional-Operator-09200d174c894bd1935b7eebd6dceb85)|
-|12|[Time-based Operator]|
-|13|[Sharing Subscription]|
-|14|[Scheduler]|
-|15|[ErrorHandling]|
+|12|[Time-based Operator](https://jesskoh.notion.site/Time-based-Operator-2624014ae8a1429cb3df4c459853a9b3)|
+|13|[Sharing Subscription](https://jesskoh.notion.site/Sharing-Subscription-b3d812a19e154180998256d4907ad240)|
+|14|[Scheduler](https://jesskoh.notion.site/Scheduler-6a981e8926e54b4f9be36ac527d51a74)|
+|15|[ErrorHandling](https://jesskoh.notion.site/ErrorHandling-8d996822369f495fbf1808bf1fa4529f)|
 
 
 
