@@ -17,7 +17,11 @@
 		C800227629BAE826000874E3 /* WeatherDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800227529BAE826000874E3 /* WeatherDTO.swift */; };
 		C800227829BAE887000874E3 /* APIManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800227729BAE887000874E3 /* APIManagerType.swift */; };
 		C800227A29BAE88E000874E3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800227929BAE88E000874E3 /* APIManager.swift */; };
-		C800227C29BAE89A000874E3 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800227B29BAE89A000874E3 /* WeatherViewController.swift */; };
+		C800227C29BAE89A000874E3 /* TodaySeoulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C800227B29BAE89A000874E3 /* TodaySeoulViewController.swift */; };
+		C866BD1829BAFCB6008C740C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = C866BD1729BAFCB6008C740C /* RxCocoa */; };
+		C866BD1A29BAFCB6008C740C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C866BD1929BAFCB6008C740C /* RxRelay */; };
+		C866BD1C29BAFCB6008C740C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C866BD1B29BAFCB6008C740C /* RxSwift */; };
+		C8EE6C7329BB06790034A78B /* TomorrowLondonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE6C7229BB06790034A78B /* TomorrowLondonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +37,8 @@
 		C800227529BAE826000874E3 /* WeatherDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDTO.swift; sourceTree = "<group>"; };
 		C800227729BAE887000874E3 /* APIManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerType.swift; sourceTree = "<group>"; };
 		C800227929BAE88E000874E3 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		C800227B29BAE89A000874E3 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		C800227B29BAE89A000874E3 /* TodaySeoulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaySeoulViewController.swift; sourceTree = "<group>"; };
+		C8EE6C7229BB06790034A78B /* TomorrowLondonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowLondonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C866BD1C29BAFCB6008C740C /* RxSwift in Frameworks */,
+				C866BD1A29BAFCB6008C740C /* RxRelay in Frameworks */,
+				C866BD1829BAFCB6008C740C /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +81,7 @@
 				C800227329BAE776000874E3 /* Resource */,
 				C800227429BAE77C000874E3 /* App */,
 				C800225E29BAE54A000874E3 /* MVVM_Weather.xcdatamodeld */,
+				C800226629BAE54B000874E3 /* Info.plist */,
 			);
 			path = MVVM_Weather;
 			sourceTree = "<group>";
@@ -121,7 +130,8 @@
 		C800227129BAE732000874E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C800227B29BAE89A000874E3 /* WeatherViewController.swift */,
+				C800227B29BAE89A000874E3 /* TodaySeoulViewController.swift */,
+				C8EE6C7229BB06790034A78B /* TomorrowLondonViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				C800226129BAE54B000874E3 /* Assets.xcassets */,
-				C800226629BAE54B000874E3 /* Info.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -170,6 +179,11 @@
 			dependencies = (
 			);
 			name = MVVM_Weather;
+			packageProductDependencies = (
+				C866BD1729BAFCB6008C740C /* RxCocoa */,
+				C866BD1929BAFCB6008C740C /* RxRelay */,
+				C866BD1B29BAFCB6008C740C /* RxSwift */,
+			);
 			productName = MVVM_Weather;
 			productReference = C800225229BAE54A000874E3 /* MVVM_Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +212,9 @@
 				Base,
 			);
 			mainGroup = C800224929BAE54A000874E3;
+			packageReferences = (
+				C866BD1629BAFCB6008C740C /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = C800225329BAE54A000874E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -226,11 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C800227829BAE887000874E3 /* APIManagerType.swift in Sources */,
+				C8EE6C7329BB06790034A78B /* TomorrowLondonViewController.swift in Sources */,
 				C800225A29BAE54A000874E3 /* ViewController.swift in Sources */,
 				C800225629BAE54A000874E3 /* AppDelegate.swift in Sources */,
 				C800227629BAE826000874E3 /* WeatherDTO.swift in Sources */,
 				C800226029BAE54A000874E3 /* MVVM_Weather.xcdatamodeld in Sources */,
-				C800227C29BAE89A000874E3 /* WeatherViewController.swift in Sources */,
+				C800227C29BAE89A000874E3 /* TodaySeoulViewController.swift in Sources */,
 				C800225829BAE54A000874E3 /* SceneDelegate.swift in Sources */,
 				C800227A29BAE88E000874E3 /* APIManager.swift in Sources */,
 			);
@@ -450,6 +468,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C866BD1629BAFCB6008C740C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C866BD1729BAFCB6008C740C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C866BD1629BAFCB6008C740C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		C866BD1929BAFCB6008C740C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C866BD1629BAFCB6008C740C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		C866BD1B29BAFCB6008C740C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C866BD1629BAFCB6008C740C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C800225E29BAE54A000874E3 /* MVVM_Weather.xcdatamodeld */ = {
