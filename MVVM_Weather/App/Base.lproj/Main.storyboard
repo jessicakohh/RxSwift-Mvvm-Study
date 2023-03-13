@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="onF-V4-6Dl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,172 +8,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
-        <scene sceneID="mtD-wa-pus">
+        <!--View Controller-->
+        <scene sceneID="ZEx-lz-rJ6">
             <objects>
-                <tabBarController id="onF-V4-6Dl" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jMw-oU-BNT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="x2S-SH-yJS" kind="relationship" relationship="viewControllers" id="kfp-T0-Tcr"/>
-                        <segue destination="8qW-fZ-CDP" kind="relationship" relationship="viewControllers" id="hkP-6E-rpY"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oYx-QE-Hfk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1" y="214"/>
-        </scene>
-        <!--오늘서울-->
-        <scene sceneID="aTB-1v-l9M">
-            <objects>
-                <viewController id="x2S-SH-yJS" customClass="TodaySeoulViewController" customModule="MVVM_Weather" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kg2-fT-0Xp">
+                <viewController id="2NQ-qe-Gdg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDt-7U-hzx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ojW-3Q-wOL">
-                                <rect key="frame" x="153.66666666666666" y="375.66666666666669" width="85.666666666666657" height="100.66666666666669"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfJ-0y-QAh">
-                                        <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="71.666666666666671"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKM-x6-Mpt">
-                                                <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="71.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnf-cz-26H">
-                                                <rect key="frame" x="58.33333333333335" y="0.0" width="27.333333333333336" height="71.666666666666671"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맑음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sev-uJ-jRd">
-                                        <rect key="frame" x="25.666666666666682" y="76.666666666666629" width="34.666666666666657" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Ddf-Oq-x8c"/>
+                        <viewLayoutGuide key="safeArea" id="CH0-W3-Eou"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ojW-3Q-wOL" firstAttribute="centerY" secondItem="kg2-fT-0Xp" secondAttribute="centerY" id="gnC-Fq-s3f"/>
-                            <constraint firstItem="ojW-3Q-wOL" firstAttribute="centerX" secondItem="kg2-fT-0Xp" secondAttribute="centerX" id="igi-zZ-opZ"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="오늘서울" image="sun.min.fill" catalog="system" id="0LP-qo-Fze"/>
-                    <navigationItem key="navigationItem" id="NXB-oA-bfL"/>
-                    <connections>
-                        <outlet property="todayStateLabel" destination="sev-uJ-jRd" id="c0l-KL-W4d"/>
-                        <outlet property="todayTemperatureLabel" destination="iKM-x6-Mpt" id="hba-du-OpN"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iEY-UK-dsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mT2-5T-BYg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="-160"/>
-        </scene>
-        <!--내일런던-->
-        <scene sceneID="ScM-Xl-b4O">
-            <objects>
-                <viewController id="8qW-fZ-CDP" customClass="TomorrowLondonViewController" customModule="MVVM_Weather" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fux-MC-XN2">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hrt-xH-kEc">
-                                <rect key="frame" x="153.66666666666666" y="375.66666666666669" width="85.666666666666657" height="100.66666666666669"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RCb-eb-yCJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="71.666666666666671"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-AD-cvc">
-                                                <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="71.666666666666671"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbi-9C-AKM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="71.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59i-zd-5Ss">
-                                                        <rect key="frame" x="58.33333333333335" y="0.0" width="27.333333333333336" height="71.666666666666671"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="흐림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfN-5l-iqT">
-                                        <rect key="frame" x="25.666666666666682" y="76.666666666666629" width="34.666666666666657" height="24"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="dxX-ZT-xUz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="hrt-xH-kEc" firstAttribute="centerX" secondItem="fux-MC-XN2" secondAttribute="centerX" id="EPB-A7-gGv"/>
-                            <constraint firstItem="hrt-xH-kEc" firstAttribute="centerY" secondItem="fux-MC-XN2" secondAttribute="centerY" id="f1B-j4-6lj"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="내일런던" image="sun.min" catalog="system" id="Na3-w5-p6L"/>
-                    <connections>
-                        <outlet property="tomorrowStateLabel" destination="bfN-5l-iqT" id="V3e-dI-bat"/>
-                        <outlet property="tomorrowTempLabel" destination="Gbi-9C-AKM" id="Gne-NM-i41"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ddt-wi-H40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" id="JJI-AO-8rL">
-                    <rect key="frame" x="0.0" y="0.0" width="85.666666666666657" height="100.66666666666667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQd-Fv-aXh">
-                            <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="71.666666666666671"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX5-f1-lJF">
-                                    <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="71.666666666666671"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWq-8H-pxx">
-                                    <rect key="frame" x="58.333333333333336" y="0.0" width="27.333333333333336" height="71.666666666666671"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="맑음" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHO-Ok-ps8">
-                            <rect key="frame" x="25.666666666666668" y="76.666666666666671" width="34.666666666666657" height="24"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="MeU-yC-9UG"/>
-                </stackView>
-            </objects>
-            <point key="canvasLocation" x="911" y="558"/>
+            <point key="canvasLocation" x="-157" y="184"/>
         </scene>
     </scenes>
     <resources>
-        <image name="sun.min" catalog="system" width="128" height="123"/>
-        <image name="sun.min.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

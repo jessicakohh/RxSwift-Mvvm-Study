@@ -11,14 +11,22 @@ import UIKit
 class TomorrowLondonViewController: UIViewController {
     
     // MARK: - Properties
+    
 
-    @IBOutlet weak var tomorrowTempLabel: UILabel!
-    @IBOutlet weak var tomorrowStateLabel: UILabel!
     
     // MARK: - LifeCycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+    }
+    
+    private func configureUI() {
+        view.backgroundColor = UIColor(red: 0.73, green: 0.21, blue: 0.52, alpha: 1.0)
     }
     
 }
+
+// MARK: - TableViewController
+
+
