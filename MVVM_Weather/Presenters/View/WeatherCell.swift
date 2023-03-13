@@ -11,18 +11,27 @@ import SnapKit
 class WeatherCell: UICollectionViewCell {
     
     // MARK: - Properties
-    private let cityLabel: UILabel = {
+    lazy var cityLabel: UILabel = {
         let label = UILabel()
+        label.text = "서울"
+        label.font = UIFont.boldSystemFont(ofSize: 50)
+        label.textColor = .white
         return label
     }()
     
-    private let tempLabel: UILabel = {
+    lazy var tempLabel: UILabel = {
        let label = UILabel()
+        label.text = "기온: _ 도"
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor = .white
         return label
     }()
     
-    private let humidityLabel: UILabel = {
+    lazy var humidityLabel: UILabel = {
         let label = UILabel()
+        label.text = "습도: _ %"
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor = .white
         return label
     }()
 
@@ -43,7 +52,7 @@ class WeatherCell: UICollectionViewCell {
         contentView.addSubview(humidityLabel)
         
         cityLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(75)
+            make.top.equalToSuperview().offset(150)
             make.left.equalToSuperview().offset(45)
         }
         
@@ -53,7 +62,7 @@ class WeatherCell: UICollectionViewCell {
         }
         
         humidityLabel.snp.makeConstraints { make in
-            make.bottom.equalTo(cityLabel).offset(50)
+            make.bottom.equalTo(tempLabel).offset(20)
             make.left.equalToSuperview().offset(45)
         }
     }

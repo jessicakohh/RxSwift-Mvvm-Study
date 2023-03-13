@@ -11,17 +11,23 @@ import UIKit
 class TodaySeoulViewController: UIViewController {
     
     // MARK: - Properties
-        
-    // MARK: - LifeCycle
+    let collectionViewCell = WeatherCell()
+    let apiManager = APIManager()
+    let viewModel = WeatherViewModel()
 
+    
+    
+    // MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         configureUI()
     }
     
     private func configureUI() {
         view.backgroundColor = UIColor(red: 0.27, green: 0.54, blue: 0.69, alpha: 1.00)
+        view.addSubview(collectionViewCell)
     }
     
 }
@@ -35,7 +41,9 @@ extension TodaySeoulViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeatherCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeatherCell", for: indexPath) as! WeatherCell
+        
+   
         
         return cell
     }
